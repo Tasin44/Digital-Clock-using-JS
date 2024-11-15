@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /*To center Vertically,we need to set height 
+    of the body,means height of the screen
+    100vh measn 100% of the viewport height.
+    Then justify center to bring everyting center vertically */
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1545426373-6588267475be?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;/* It's necessary to show the whole size picture in the background  */
+    overflow: hidden;
+    /* At the time of decreasing the size of the browser
+    we won't see any overflow in bottom or right  */
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 6px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /*It's already in the center but we want it when we change in other 
+    section we want it exactly to be in the center */
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{ /* clock class div property  */
+    margin: 7px;
+    position: relative;
+}
+
+
+.clock span{
+    width: 160px;
+    height: 100px;
+    background-color: rgb(66, 87, 25);
+    color: white;
+    /* padding: 10px; */
+    opacity: .8; /* It'll make the background-color lighter  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    /* .3 means 30% transparency or opacity of black color  */
+
+}
+
+
+.clock .text{
+    height: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgb(19, 90, 223);
+    opacity: .8;
+}
+
+.clock #ampm{
+    bottom: 0;
+    padding-bottom: 10px;
+    position:absolute;/* It'll move the ampm down line of others  */
+    width: 60px;
+    height: 30px;
+    font-size: 2.5rem;
+    background-color: rgb(9, 65, 65);
+}
